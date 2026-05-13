@@ -1,0 +1,18 @@
+{
+  "name": "symphony-todo-app",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web:dev": "npm run dev -w @symphony-todo/web",
+    "web:build": "npm run build -w @symphony-todo/web",
+    "web:preview": "npm run preview -w @symphony-todo/web",
+    "typecheck": "npm run typecheck -w @symphony-todo/shared && npm run typecheck -w @symphony-todo/web"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
